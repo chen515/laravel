@@ -92,7 +92,7 @@
 	•	OR
 	•	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
 `````
-# Testing with Curl
+# API Tests with Curl
 `````
 create new note:
 curl -H 'content-type: application/json' -u max123:1234 -v -X POST -d '{"message":"Good Friday msg","tags":"Notice"}' http://localhost:8001/api/notes
