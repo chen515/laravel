@@ -30,8 +30,8 @@
   Returns json data about a single note.
 	•	URL:/api/notes
 	•	Method:POST
-	•	URL ParamsRequired: none 
-	•	Data Params:[“message","tags”] 
+	•	URL ParamsRequired:none
+	•	Data Params:[“message","tags”]
 	•	Success Response:
 	•	Code: 200 Content: {"message":"Sarah's msg","tags":"email","updated_at":"2017-05-12 03:34:46","created_at":"2017-05-12 03:34:46","id":13}
 	•	Error Response:
@@ -51,7 +51,7 @@
 	•	Code: 404 NOT FOUND Content: { error : "Sorry, the page you are looking for could not be found." }
 	•	OR
 	•	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
-	•	Sample Call:{"message":"tom's email msg","tags":"email"} 
+	•	Sample Call:{"message":"tom's email msg","tags":"email"}
 3. Delete a note 
 	•	Returns json data about a single note.
 	•	URL:/api/notes/:id
