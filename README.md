@@ -12,25 +12,25 @@
  ```
  - first create tables: users, notes
  - create a user through Postman:
-   •	URL : /api/users
+   •	URL:/api/users
    •	Method:POST
-   •	URL ParamsRequired: none
-   •	Data Params [“name”,”username”, “email”, “password”]
+   •	URL ParamsRequired:none
+   •	Data Params:[“name”,”username”, “email”, “password”]
    •	Success Response:
    •	Code: 200 Content: {"name":"tina","username":"tina123","email":"tina123@gmail.com","updated_at":"2017-05-12 14:26:27","created_at":"2017-05-12 14:26:27","id":0}
    •	Error Response:
-   •	Code: 404 NOT FOUND  Content: { error : "Sorry, the page you are looking for could not be found." }
+   •	Code: 404 NOT FOUND Content: { error : "Sorry, the page you are looking for could not be found." }
    •	OR
-   •	Code: 401 UNAUTHORIZED  Content: { error : "Invalid credentials." }
-   •	Sample Call:  {"name":"tina","username":"tina123","email":"tina123@gmail.com","password":"1234"}
+   •	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
+   •	Sample Call:{"name":"tina","username":"tina123","email":"tina123@gmail.com","password":"1234"}
 ```
 # API tests through Postman
 ```
 1. Create a note 
   Returns json data about a single note.
-	•	URL :/api/notes
+	•	URL:/api/notes
 	•	Method:POST
-	•	URL Params Required: none 
+	•	URL ParamsRequired: none 
 	•	Data Params:[“message","tags”] 
 	•	Success Response:
 	•	Code: 200 Content: {"message":"Sarah's msg","tags":"email","updated_at":"2017-05-12 03:34:46","created_at":"2017-05-12 03:34:46","id":13}
@@ -38,7 +38,7 @@
 	•	Code: 404 NOT FOUND Content: { error : "Sorry, the page you are looking for could not be found." }
 	•	OR
 	•	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
-	•	Sample Call:  {"message":"Sarah's msg","tags":"email"}
+	•	Sample Call:{"message":"Sarah's msg","tags":"email"}
 2. Edit a note 
 	•	Returns json data about a single note.
 	•	URL:/api/notes/:id
@@ -51,10 +51,10 @@
 	•	Code: 404 NOT FOUND Content: { error : "Sorry, the page you are looking for could not be found." }
 	•	OR
 	•	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
-	•	Sample Call: {"message":"tom's email msg","tags":"email"} 
+	•	Sample Call:{"message":"tom's email msg","tags":"email"} 
 3. Delete a note 
 	•	Returns json data about a single note.
-	•	URL :/api/notes/:id
+	•	URL:/api/notes/:id
 	•	Method:DELETE
 	•	URL ParamsRequired:none
 	•	Data Params:none
