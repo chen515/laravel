@@ -11,19 +11,9 @@
 # Prepare data:
  ```
  - first create tables: users, notes
- - create a user through Postman:
-   •	URL:/api/users
-   •	Method:POST
-   •	URL ParamsRequired:none
-   •	Data Params:[“name”,”username”, “email”, “password”]
-   •	Success Response:
-   •	Code: 200 Content: {"name":"tina","username":"tina123","email":"tina123@gmail.com","updated_at":"2017-05-12 14:26:27","created_at":"2017-05-12 14:26:27","id":0}
-   •	Error Response:
-   •	Code: 404 NOT FOUND Content: { error : "Sorry, the page you are looking for could not be found." }
-   •	OR
-   •	Code: 401 UNAUTHORIZED Content: { error : "Invalid credentials." }
-   •	Sample Call:{"name":"tina","username":"tina123","email":"tina123@gmail.com","password":"1234"}
-```
+ - create a user through web site:
+   http://localhost:8001/users
+ ```
 # API tests through Postman
 ```
 1. Create a note 

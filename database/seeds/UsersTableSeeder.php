@@ -2,6 +2,7 @@
 
 use App\User;
 use Illuminate\Database\Seeder;
+use Hash;
 
 class UsersTableSeeder extends Seeder
 {
