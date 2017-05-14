@@ -12,7 +12,11 @@
  ```
  - first, configure database connection from the app/config/database.php file
  - second, create tables: users, notes
- - third, create a user through web site:
+   - run: php artisan migrate
+   - rollback: php artisan migrate:rollback
+ - third, seeding your database with test data using seed classes
+   - run: php artisan db:seed
+ - fourth, create additional user through web site:
    http://localhost:8001/users
  ```
 # API tests through Postman
