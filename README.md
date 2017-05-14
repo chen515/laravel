@@ -10,8 +10,9 @@
 ```   
 # Prepare data:
  ```
- - first create tables: users, notes
- - create a user through web site:
+ - first, configure database connection from the app/config/database.php file
+ - second, create tables: users, notes
+ - third, create a user through web site:
    http://localhost:8001/users
  ```
 # API tests through Postman
