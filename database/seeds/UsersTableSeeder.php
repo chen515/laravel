@@ -2,7 +2,6 @@
 
 use App\User;
 use Illuminate\Database\Seeder;
-use Hash;
 
 class UsersTableSeeder extends Seeder
 {
@@ -14,11 +13,10 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create(array(
-            'name' => 'max',
-            'username' => 'max123',
-            'password' => Hash::make('1234'),
-            'email' => 'max@laravel.com'
+            'name' => 'david',
+            'username' => 'david123',
+            'password' => bcrypt('1234'),
+            'email' => 'david@laravel.com'
         ));
-
     }
 }

@@ -13,8 +13,8 @@ class NotesTableSeeder extends Seeder
     public function run()
     {
         Note::create(array(
-            'message' => 'This is a msg',
-            'tags' => 'Greeting',
+            'message' => 'Test user seeding',
+            'tags' => 'Testing',
         ));
     }
 }
