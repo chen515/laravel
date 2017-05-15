@@ -17,9 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/api/users', 'UserController@store');
-
 Route::group(['middleware' => 'auth.basic'], function () {
+    Route::post('/api/users', 'UserController@store');
     Route::get('/api/notes', 'NoteController@index');
     Route::get('/api/notes/{id}', 'NoteController@show');
     Route::post('/api/notes', 'NoteController@store');
